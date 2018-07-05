@@ -1,5 +1,4 @@
 package com.example.errandsystem;
-
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
