@@ -1,19 +1,42 @@
 package com.example.errandsystem;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
-public class User extends AppCompatActivity {
+//the model
+public class User {
 
-    private TextView textViewName;
+    private int id;
+    private String name;
+    private String email;
+    private String password;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_users);
+    public int getId(){
+        return id;
+    }
 
-        textViewName = (TextView) findViewById(R.id.text1);
-        String nameFromIntent = getIntent().getStringExtra("EMAIL");
-        textViewName.setText("Welcome " + nameFromIntent);
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
     }
 }
